@@ -6,7 +6,7 @@ using namespace std;
 
 
 bool isBalanced(string exp){
-    if(exp.length() % 2 != 0) return false;
+    if(exp.length() % 2 != 0) return false; //odd-length string cannot be balanced
     
     stack<char> s;
     for(char current:exp){
